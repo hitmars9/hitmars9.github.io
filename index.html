@@ -55,12 +55,13 @@
                 if(hasClicked) return true;
             };
 
+            video.play();
+                videoClick();
+
             function buttonClick(event) {
                 event.preventDefault();
                 if(!hasClicked) hasClicked = true;
                 overlay.hidden = true;
-                video.play();
-                videoClick();
             }
 
             function videoClick(event) {
